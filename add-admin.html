@@ -1,0 +1,172 @@
+<html lang="en" style="height: auto;"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pharmacy</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&amp;display=swap" rel="stylesheet">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./assets/dist/css/adminlte.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="./assets/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css">
+
+</head>
+<body class="layout-fixed" style="height: auto;">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="./admin.php?logout">
+                Logout
+            </a>
+        </li>
+    </ul>
+</nav><aside class="main-sidebar control-sidebar-dark">
+    <!-- side -->
+    <div class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition"><div class="os-resize-observer-host observed"><div class="os-resize-observer" style="left: 0px; right: auto;"></div></div><div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;"><div class="os-resize-observer"></div></div><div class="os-content-glue" style="margin: 0px -8px; width: 249px; height: 356px;"></div><div class="os-padding"><div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;"><div class="os-content" style="padding: 0px 8px; height: 100%; width: 100%;">
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <h2><a href="admin.php">Admin page</a></h2>
+
+        </div>
+        <!-- side bar menu -->
+         <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+                <a href="admin-dashboard.html" class="nav-link">
+                    <i class=" fas fa-edit"></i>
+                    <p>
+                        Dashboard
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                    <i class="fas fa-tasks"></i>
+                    <p>
+                        Manage Pharmacy
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="approve-pharmacy.html" class="nav-link  ">
+                            <p>Approve Pharmacy</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="veiw-pharmacy.html" class="nav-link ">
+                            <p>View Pharmacy</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="delete-pharmacy.html" class="nav-link ">
+                            <p>Deleted Pharmacy</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="admin-update-account.html" class="nav-link  ">
+                    <i class="fas fa-edit"></i>
+                    <p>
+                        Update Account
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="add-admin.html" class="nav-link " "="">
+                    <i class=" fas fa-edit"></i>
+                    <p>
+                        Add Admin
+                    </p>
+                </a>
+            </li>
+        </ul>
+</div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="height: 89.6985%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div></aside><div class="content-wrapper pt-2 pb-5 " style="min-height: 357px;">
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid pt-2">
+            <div class="card card-default">
+                <div class="card-body ">
+                    <form method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" name="first_name" class="form-control" placeholder="First Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Middle Name</label>
+                                    <input type="text" name="middle_name" class="form-control" placeholder="Middle Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Age</label>
+                                    <input type="number" name="age" class="form-control" placeholder="Age" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Sex</label>
+                                    <select class="form-control" name="sex" data-placeholder="Sex" style="width: 100%;">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>username</label>
+                                    <input type="text" name="username" class="form-control " placeholder="Username" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" class="form-control " placeholder="Email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" class="form-control" placeholder="Phone" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" name="password" class="form-control " placeholder="Password" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="confirm_password" class="form-control " placeholder="Confirm Password" required="">
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <div class="display-flex">
+                            <button name="addnewadmin" type="submit" class="btn btn-primary  btn-md float-right">Add</button>
+                        </div>
+                    </form> <!-- /.row -->
+                </div>
+            </div>
+        </div>
+    </section>
+</div>    </div>
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./assets//dist//js//adminlte.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="./assets//overlayScrollbars//js//jquery.overlayScrollbars.min.js"></script>
+<!-- DataTables -->
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+<!-- bs-custome-file-input -->
+<script src="./assets/bs-custom-file-input//bs-custom-file-input.min.js"></script>
+
+</body></html>
